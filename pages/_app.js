@@ -1,15 +1,20 @@
-import "./globals.css";
-import "./animate.css";
-import "./bootstrap.min.css";
-import "./jquery.fancybox.min.css";
-import "./swiper.min.css";
-import "./aos.css";
-import "./slicknav.css";
-import "./icofont.css";
-import "./style.css";
+import React, { useEffect } from "react";
+import "/public/lib/scss/style.scss";
 import Head from "next/head";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "swiper/css";
+import "/public/lib/css/swiper.min.css";
+
+function stylePreloader() {
+  document.querySelector("body").classList.add("preloader-deactive");
+}
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    AOS.init({ once: true });
+    stylePreloader();
+  }, []);
   <Head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,23 +31,23 @@ export default function App({ Component, pageProps }) {
       rel="stylesheet"
     />
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="public/lib/csscss/bootstrap.min.css" rel="stylesheet" />
 
-    <link href="assets/css/icofont.css" rel="stylesheet" />
+    <link href="public/lib/csscss/icofont.css" rel="stylesheet" />
 
-    <link href="assets/css/elegantIcons.css" rel="stylesheet" />
+    <link href="public/lib/csscss/elegantIcons.css" rel="stylesheet" />
 
-    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="public/lib/csscss/animate.css" rel="stylesheet" />
 
-    <link href="assets/css/aos.css" rel="stylesheet" />
+    <link href="public/lib/csscss/aos.css" rel="stylesheet" />
 
-    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="public/lib/csscss/jquery.fancybox.min.css" rel="stylesheet" />
 
-    <link href="assets/css/slicknav.css" rel="stylesheet" />
+    <link href="public/lib/csscss/slicknav.css" rel="stylesheet" />
 
-    <link href="assets/css/swiper.min.css" rel="stylesheet" />
+    <link href="public/lib/csscss/swiper.min.css" rel="stylesheet" />
 
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="public/lib/csscss/style.css" rel="stylesheet" />
   </Head>;
   return <Component {...pageProps} />;
 }

@@ -1,3 +1,4 @@
+import TeamSliderComponent from "@/components/TeamSliderComponent";
 import Image from "next/image";
 import Link from "next/link";
 export default function About() {
@@ -301,103 +302,7 @@ export default function About() {
                 </div>
                 <div className="col-xl-8">
                   <div className="team-member-items">
-                    <div className="swiper-container team-slider-container">
-                      <div className="swiper-wrapper team-slider">
-                        <div className="swiper-slide team-member">
-                          <div className="thumb">
-                            <Image
-                              width={0}
-                              height={0}
-                              sizes="100vw"
-                              style={{ width: "100%", height: "auto" }}
-                              src="/img/team/1.jpg"
-                              alt="Image"
-                            />
-                            <div className="social-icons">
-                              <Link href="#">
-                                <i className="icofont-facebook"></i>
-                              </Link>
-                              <Link href="#">
-                                <i className="icofont-skype"></i>
-                              </Link>
-                              <Link href="#">
-                                <i className="icofont-twitter"></i>
-                              </Link>
-                            </div>
-                          </div>
-                          <div className="content">
-                            <div className="member-info">
-                              <h4 className="name">
-                                <Link href="#/">Harvey Harrington</Link>
-                              </h4>
-                              <h6 className="designation">Senior Volunteer</h6>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="swiper-slide team-member">
-                          <div className="thumb">
-                            <Image
-                              width={0}
-                              height={0}
-                              sizes="100vw"
-                              style={{ width: "100%", height: "auto" }}
-                              src="/img/team/2.jpg"
-                              alt="Image"
-                            />
-                            <div className="social-icons">
-                              <Link href="#">
-                                <i className="icofont-facebook"></i>
-                              </Link>
-                              <Link href="#">
-                                <i className="icofont-skype"></i>
-                              </Link>
-                              <Link href="#">
-                                <i className="icofont-twitter"></i>
-                              </Link>
-                            </div>
-                          </div>
-                          <div className="content">
-                            <div className="member-info">
-                              <h4 className="name">
-                                <Link href="#/">Alejandra Bobbitt</Link>
-                              </h4>
-                              <h6 className="designation">Senior Volunteer</h6>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="swiper-slide team-member">
-                          <div className="thumb">
-                            <Image
-                              width={0}
-                              height={0}
-                              sizes="100vw"
-                              style={{ width: "100%", height: "auto" }}
-                              src="/img/team/3.jpg"
-                              alt="Image"
-                            />
-                            <div className="social-icons">
-                              <Link href="#">
-                                <i className="icofont-facebook"></i>
-                              </Link>
-                              <Link href="#">
-                                <i className="icofont-skype"></i>
-                              </Link>
-                              <Link href="#">
-                                <i className="icofont-twitter"></i>
-                              </Link>
-                            </div>
-                          </div>
-                          <div className="content">
-                            <div className="member-info">
-                              <h4 className="name">
-                                <Link href="#/">Sherika Hankins</Link>
-                              </h4>
-                              <h6 className="designation">Senior Volunteer</h6>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <TeamSliderComponent />
                   </div>
                 </div>
               </div>
