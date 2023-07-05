@@ -7,7 +7,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <Script src="/public/lib/js/sample.min.js"></Script>
+        {/* <Script src="/public/lib/js/sample.min.js"></Script>
         <Script src="/public/lib/js/modernizr.js"></Script>
         <Script src="/public/lib/js/jquery-3.5.1.min.js"></Script>
         <Script src="/public/lib/js/jquery-migrate.js"></Script>
@@ -23,7 +23,7 @@ export default function Document() {
         <Script src="/public/lib/js/counterup.js"></Script>
         <Script src="/public/lib/js/waypoint.js"></Script>
         <Script src="/public/lib/js/wow.min.js"></Script>
-        <Script src="/public/lib/js/jquery.easypiechart.min.js"></Script>
+        <Script src="/public/lib/js/jquery.easypiechart.min.js"></Script> */}
         <Script src="/public/lib/js/custom.js"></Script>
       </body>
     </Html>

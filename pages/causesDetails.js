@@ -1,127 +1,12 @@
-import Image from "next/image";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+
 import Link from "next/link";
 
 export default function CausesDetails() {
   return (
     <div className="wrapper causes-details-page-wrapper">
-      <div className="preloader-wrap">
-        <div className="preloader">
-          <span className="dot"></span>
-          <div className="dots">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </div>
-
-      <header className="header-area header-default sticky-header">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-5 col-sm-3 col-md-3 col-lg-2 pr-0">
-              <div className="header-logo-area">
-                <Link href="/">
-                  <Image
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "100%", height: "auto" }}
-                    className="logo-main"
-                    src="/img/logo.png"
-                    alt="Logo"
-                  />
-                  <Image
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "100%", height: "auto" }}
-                    className="logo-light"
-                    src="/img/logo.png"
-                    alt="Logo"
-                  />
-                </Link>
-              </div>
-            </div>
-            <div className="col-7 col-sm-9 col-md-9 col-lg-10">
-              <div className="header-align">
-                <div className="header-navigation-area">
-                  <ul className="main-menu nav justify-content-center">
-                    <li>
-                      <Link href="/">Home</Link>
-                    </li>
-                    <li>
-                      <Link href="about.html">About Us</Link>
-                    </li>
-                    <li className="has-submenu active">
-                      <Link href="/causes">Causes</Link>
-                      <ul className="submenu-nav">
-                        <li>
-                          <Link href="/causes">Causes</Link>
-                        </li>
-                        <li>
-                          <Link
-                            className="text-theme-color"
-                            href="causes-details.html"
-                          >
-                            Causes Details
-                          </Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="has-submenu">
-                      <Link href="/blog">Blog</Link>
-                      <ul className="submenu-nav">
-                        <li>
-                          <Link href="/blog">Blog Grid</Link>
-                        </li>
-                        <li>
-                          <Link href="blog-details.html">Blog Single</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li className="has-submenu">
-                      <Link href="/">Pages</Link>
-                      <ul className="submenu-nav">
-                        <li>
-                          <Link href="event-details.html">Event Details</Link>
-                        </li>
-                        <li>
-                          <Link href="volunteer.html">Volunteer</Link>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <Link href="contact.html">Contact Us</Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="header-action-area">
-                  <button className="btn-menu d-xl-none">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </button>
-                  <Link
-                    href="contact.html"
-                    className="btn-theme btn-gradient btn-slide btn-style"
-                  >
-                    Give Support{" "}
-                    <Image
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      style={{ width: "100%", height: "auto" }}
-                      className="icon icon-img"
-                      src="/img/icons/arrow-line-right2.png"
-                      alt="Icon"
-                    />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Navbar />
 
       <main className="main-content site-wrapper-reveal">
         <section
@@ -153,11 +38,7 @@ export default function CausesDetails() {
                   <div className="causes-details-content">
                     <div className="causes-details">
                       <div className="thumb">
-                        <Image
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          style={{ width: "100%", height: "auto" }}
+                        <img
                           className="w-100"
                           src="/img/causes/d1.jpg"
                           alt="Image-Givest"
@@ -241,27 +122,13 @@ export default function CausesDetails() {
                         <div className="col-sm-6">
                           <div className="document-item mb-xs-10">
                             <h4>Documents.pdf</h4>
-                            <Image
-                              width={0}
-                              height={0}
-                              sizes="100vw"
-                              style={{ width: "100%", height: "auto" }}
-                              src="/img/icons/file.png"
-                              alt="Icon"
-                            />
+                            <img src="/img/icons/file.png" alt="Icon" />
                           </div>
                         </div>
                         <div className="col-sm-6">
                           <div className="document-item bgcolor-theme2">
                             <h4>Documents.pdf</h4>
-                            <Image
-                              width={0}
-                              height={0}
-                              sizes="100vw"
-                              style={{ width: "100%", height: "auto" }}
-                              src="/img/icons/file.png"
-                              alt="Icon"
-                            />
+                            <img src="/img/icons/file.png" alt="Icon" />
                           </div>
                         </div>
                       </div>
@@ -289,131 +156,79 @@ export default function CausesDetails() {
                       <h3>Great Donners</h3>
                       <div className="donners-item">
                         <div className="donner-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
+                          <img
                             src="/img/photos/donner1.png"
                             alt="Image-Givest"
                           />
                         </div>
                         <div className="donner-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
+                          <img
                             src="/img/photos/donner2.png"
                             alt="Image-Givest"
                           />
                         </div>
                         <div className="donner-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
+                          <img
                             src="/img/photos/donner3.png"
                             alt="Image-Givest"
                           />
                         </div>
                         <div className="donner-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
+                          <img
                             src="/img/photos/donner4.png"
                             alt="Image-Givest"
                           />
                         </div>
                         <div className="donner-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
+                          <img
                             src="/img/photos/donner2.png"
                             alt="Image-Givest"
                           />
                         </div>
                         <div className="donner-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
+                          <img
                             src="/img/photos/donner3.png"
                             alt="Image-Givest"
                           />
                         </div>
                         <div className="donner-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
+                          <img
                             src="/img/photos/donner5.png"
                             alt="Image-Givest"
                           />
                         </div>
                         <div className="donner-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
+                          <img
                             src="/img/photos/donner3.png"
                             alt="Image-Givest"
                           />
                         </div>
                         <div className="donner-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
+                          <img
                             src="/img/photos/donner1.png"
                             alt="Image-Givest"
                           />
                         </div>
                         <div className="donner-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
+                          <img
                             src="/img/photos/donner2.png"
                             alt="Image-Givest"
                           />
                         </div>
                         <div className="donner-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
+                          <img
                             src="/img/photos/donner3.png"
                             alt="Image-Givest"
                           />
                         </div>
                         <div className="donner-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
+                          <img
                             src="/img/photos/donner1.png"
                             alt="Image-Givest"
                           />
                         </div>
                         <div className="donner-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
+                          <img
                             src="/img/photos/donner2.png"
                             alt="Image-Givest"
                           />
@@ -427,11 +242,7 @@ export default function CausesDetails() {
                           Make A Donation
                         </h5>
                         <h2 className="title text-white">Donate Now</h2>
-                        <Image
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          style={{ width: "100%", height: "auto" }}
+                        <img
                           className="line-shape"
                           src="/img/shape/line-t3.png"
                           alt="Image-Givest"
@@ -485,11 +296,7 @@ export default function CausesDetails() {
                                 </label>
                               </div>
                             </div>
-                            <Image
-                              width={0}
-                              height={0}
-                              sizes="100vw"
-                              style={{ width: "100%", height: "auto" }}
+                            <img
                               src="/img/photos/payment-card.png"
                               alt="Image-Givest"
                             />
@@ -555,11 +362,7 @@ export default function CausesDetails() {
                             className="btn-theme btn-gradient btn-slide"
                           >
                             Donate Now{" "}
-                            <Image
-                              width={0}
-                              height={0}
-                              sizes="100vw"
-                              style={{ width: "100%", height: "auto" }}
+                            <img
                               className="icon icon-img"
                               src="/img/icons/arrow-line-right2.png"
                               alt="Icon"
@@ -574,20 +377,12 @@ export default function CausesDetails() {
                         </div>
                       </form>
                       <div className="layer-style">
-                        <Image
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          style={{ width: "100%", height: "auto" }}
+                        <img
                           className="layer-style1"
                           src="/img/shape/form-shape1.png"
                           alt="Image-Givest"
                         />
-                        <Image
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          style={{ width: "100%", height: "auto" }}
+                        <img
                           className="layer-style2"
                           src="/img/shape/form-shape2.png"
                           alt="Image-Givest"
@@ -599,11 +394,7 @@ export default function CausesDetails() {
                     <div className="widget">
                       <h3 className="widget-title">Search Here</h3>
                       <div className="separator-line">
-                        <Image
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          style={{ width: "100%", height: "auto" }}
+                        <img
                           className="me-1"
                           src="/img/shape/line-t2.png"
                           alt="Image-Givest"
@@ -630,11 +421,7 @@ export default function CausesDetails() {
                     <div className="widget">
                       <h3 className="widget-title">Causes Categories</h3>
                       <div className="separator-line">
-                        <Image
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          style={{ width: "100%", height: "auto" }}
+                        <img
                           className="me-1"
                           src="/img/shape/line-t2.png"
                           alt="Image-Givest"
@@ -661,11 +448,7 @@ export default function CausesDetails() {
                     <div className="widget">
                       <h3 className="widget-title">Urgent Causes</h3>
                       <div className="separator-line">
-                        <Image
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          style={{ width: "100%", height: "auto" }}
+                        <img
                           className="me-1"
                           src="/img/shape/line-t2.png"
                           alt="Image-Givest"
@@ -673,14 +456,7 @@ export default function CausesDetails() {
                       </div>
                       <div className="widget-causes-item">
                         <div className="thumb">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
-                            src="/img/causes/w1.jpg"
-                            alt="Givest-HasTech"
-                          />
+                          <img src="/img/causes/w1.jpg" alt="Givest-HasTech" />
                         </div>
                         <div className="content">
                           <h4 className="title">
@@ -729,11 +505,7 @@ export default function CausesDetails() {
                             >
                               <span>
                                 Donate Now{" "}
-                                <Image
-                                  width={0}
-                                  height={0}
-                                  sizes="100vw"
-                                  style={{ width: "100%", height: "auto" }}
+                                <img
                                   className="icon icon-img"
                                   src="/img/icons/arrow-line-right2.png"
                                   alt="Icon"
@@ -747,11 +519,7 @@ export default function CausesDetails() {
                     <div className="widget mb-0 pb-3">
                       <h3 className="widget-title">Popular Tags</h3>
                       <div className="separator-line">
-                        <Image
-                          width={0}
-                          height={0}
-                          sizes="100vw"
-                          style={{ width: "100%", height: "auto" }}
+                        <img
                           className="me-1"
                           src="/img/shape/line-t2.png"
                           alt="Image-Givest"
@@ -802,268 +570,7 @@ export default function CausesDetails() {
         </section>
       </main>
 
-      <footer className="footer-area">
-        <div className="footer-main">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                <div className="widget-item">
-                  <div className="about-widget">
-                    <Link className="footer-logo" href="/">
-                      <Image
-                        width={0}
-                        height={0}
-                        sizes="100vw"
-                        style={{ width: "100%", height: "auto" }}
-                        src="/img/logo.png"
-                        alt="Logo"
-                      />
-                    </Link>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the industry orem
-                      Ipsum has been the industry's since the when unknown.
-                    </p>
-                    <div className="widget-total-raised">
-                      <h4 className="raised-title">Total Raised:</h4>
-                      <div className="raised-amount">$8,965</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                <div className="widget-item">
-                  <h4 className="widget-title line-style">Gallery</h4>
-                  <div className="widget-gallery">
-                    <div className="row row-cols-3 row-gutter-10">
-                      <div className="col">
-                        <div className="gallery-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
-                            src="/img/photos/gallery1.jpg"
-                            alt="Givest-HasTech"
-                          />
-                          <Link className="icon" href="#/">
-                            <i className="icofont-instagram"></i>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="col">
-                        <div className="gallery-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
-                            src="/img/photos/gallery2.jpg"
-                            alt="Givest-HasTech"
-                          />
-                          <Link className="icon" href="#/">
-                            <i className="icofont-instagram"></i>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="col">
-                        <div className="gallery-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
-                            src="/img/photos/gallery3.jpg"
-                            alt="Givest-HasTech"
-                          />
-                          <Link className="icon" href="#/">
-                            <i className="icofont-instagram"></i>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="col">
-                        <div className="gallery-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
-                            src="/img/photos/gallery4.jpg"
-                            alt="Givest-HasTech"
-                          />
-                          <Link className="icon" href="#/">
-                            <i className="icofont-instagram"></i>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="col">
-                        <div className="gallery-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
-                            src="/img/photos/gallery5.jpg"
-                            alt="Givest-HasTech"
-                          />
-                          <Link className="icon" href="#/">
-                            <i className="icofont-instagram"></i>
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="col">
-                        <div className="gallery-item">
-                          <Image
-                            width={0}
-                            height={0}
-                            sizes="100vw"
-                            style={{ width: "100%", height: "auto" }}
-                            src="/img/photos/gallery6.jpg"
-                            alt="Givest-HasTech"
-                          />
-                          <Link className="icon" href="#/">
-                            <i className="icofont-instagram"></i>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-6 col-md-6 col-lg-4 col-xl-4">
-                <div className="widget-item menu-wrap-two-column">
-                  <h4 className="widget-title line-style">Quick Links</h4>
-                  <nav className="widget-menu-wrap">
-                    <div className="row">
-                      <div className="col-6 col-sm-6 col-md-6 pr-sm-5">
-                        <ul className="nav-menu nav">
-                          <li>
-                            <Link href="about.html">About Us</Link>
-                          </li>
-                          <li>
-                            <Link href="/blog">Blog Post Terms</Link>
-                          </li>
-                          <li>
-                            <Link href="#/">Conditions</Link>
-                          </li>
-                          <li>
-                            <Link href="#/">Privacy Policy</Link>
-                          </li>
-                          <li>
-                            <Link href="#/">Documentation</Link>
-                          </li>
-                          <li>
-                            <Link href="#/">Donners</Link>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="col-6 col-sm-6 col-md-6 pl-sm-5">
-                        <ul className="nav-menu nav align-right">
-                          <li>
-                            <Link href="volunteer.html">Become Volunteer</Link>
-                          </li>
-                          <li>
-                            <Link href="#/">Quick Fundraise</Link>
-                          </li>
-                          <li>
-                            <Link href="#/">Give Donation</Link>
-                          </li>
-                          <li>
-                            <Link href="volunteer.html">Become Volunteer</Link>
-                          </li>
-                          <li>
-                            <Link href="causes-details.html">
-                              Food And Water
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="causes-details.html">
-                              Medical facilities
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="scroll-to-top">
-            <Image
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
-              src="/img/icons/arrow-up-line.png"
-              alt="Icon-Image"
-            />
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <div className="container">
-            <div className="footer-bottom-content">
-              <div className="row align-items-center">
-                <div className="col-12">
-                  <div className="widget-copyright text-center">
-                    <p>
-                      © 2025 <span>Givest</span>. Made with{" "}
-                      <i className="icon_heart"></i> by{" "}
-                      <Link target="_blank" href="https://www.hasthemes.com">
-                        HasThemes
-                      </Link>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="shape-layer">
-          <Image
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "auto" }}
-            src="/img/shape/footer-line.png"
-            alt="Image-Givest"
-          />
-        </div>
-      </footer>
-
-      <aside className="off-canvas-wrapper">
-        <div className="off-canvas-inner">
-          <div className="off-canvas-overlay"></div>
-
-          <div className="off-canvas-content">
-            <div className="off-canvas-header">
-              <div className="logo-area">
-                <Link href="/">
-                  <Image
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "100%", height: "auto" }}
-                    src="/img/logo.png"
-                    alt="Logo"
-                  />
-                </Link>
-              </div>
-              <div className="close-action">
-                <button className="btn-close">
-                  <i className="icofont-close"></i>
-                </button>
-              </div>
-            </div>
-
-            <div className="off-canvas-item">
-              <div className="res-mobile-menu menu-active-one"></div>
-            </div>
-
-            <div className="off-canvas-footer"></div>
-          </div>
-        </div>
-      </aside>
+      <Footer />
     </div>
   );
 }

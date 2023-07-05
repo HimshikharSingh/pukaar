@@ -3475,7 +3475,7 @@ table p {
   .main-menu
   > li.active
   > a:before {
-  background-image: url("../public/img/shape/menu-shape.png");
+  background-image: url("/img/shape/menu-shape.png");
   background-repeat: no-repeat;
   background-position: 45% 15%;
   content: "";
@@ -4581,7 +4581,7 @@ table p {
   .tittle-wrp
   h2
   span:before {
-  background-image: url("../public/img/shape/banner-title-shape.png");
+  background-image: url("/img/shape/banner-title-shape.png");
   background-repeat: no-repeat;
   background-position: 13px 9px;
   content: "";

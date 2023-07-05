@@ -1,10 +1,15 @@
 import React, { useEffect } from "react";
-import "/public/lib/scss/style.scss";
-import Head from "next/head";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "swiper/css";
 import "/public/lib/css/swiper.min.css";
+import "/public/lib/css/bootstrap.min.css";
+import "/public/lib/css/animate.css";
+import "/public/lib/css/aos.css";
+import "/public/lib/css/jquery.fancybox.min.css";
+import "/public/lib/css/slicknav.css";
+import "/public/lib/css/style.css";
+import "/public/lib/css/icofont.css";
+import "/public/lib/css/elegantIcons.css";
 
 function stylePreloader() {
   document.querySelector("body").classList.add("preloader-deactive");
@@ -15,39 +20,21 @@ export default function App({ Component, pageProps }) {
     AOS.init({ once: true });
     stylePreloader();
   }, []);
-  <Head>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>;
 
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Yeseva+One:400"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i"
-      rel="stylesheet"
-    />
-
-    <link href="public/lib/csscss/bootstrap.min.css" rel="stylesheet" />
-
-    <link href="public/lib/csscss/icofont.css" rel="stylesheet" />
-
-    <link href="public/lib/csscss/elegantIcons.css" rel="stylesheet" />
-
-    <link href="public/lib/csscss/animate.css" rel="stylesheet" />
-
-    <link href="public/lib/csscss/aos.css" rel="stylesheet" />
-
-    <link href="public/lib/csscss/jquery.fancybox.min.css" rel="stylesheet" />
-
-    <link href="public/lib/csscss/slicknav.css" rel="stylesheet" />
-
-    <link href="public/lib/csscss/swiper.min.css" rel="stylesheet" />
-
-    <link href="public/lib/csscss/style.css" rel="stylesheet" />
-  </Head>;
-  return <Component {...pageProps} />;
+  return (
+    <div>
+      <Component {...pageProps} />
+    </div>
+  );
 }
