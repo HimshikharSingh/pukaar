@@ -41,9 +41,11 @@ const Navbar = () => {
                       <Link href="/causes">Causes</Link>
                     </li>
                     <li
-                      className={router.pathname === "/blog" ? "active" : null}
+                      className={
+                        router.pathname === "/career" ? "active" : null
+                      }
                     >
-                      <Link href="/blog">Blog</Link>
+                      <Link href="/career">Careers</Link>
                     </li>
                     <li
                       className={
