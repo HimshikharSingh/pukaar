@@ -1,7 +1,7 @@
 // pages/api/donations/index.js
 
-import connectDb from "./utils/connectDb";
-import Donation from "./models/Donation";
+import connectDb from "@/utils/connectDB";
+import Donation from "@/models/donation";
 
 connectDb();
 
